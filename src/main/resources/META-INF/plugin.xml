@@ -1,0 +1,14 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.humbledroid.Kommander</id>
+    <name>Kommander</name>
+    <vendor email="humbledroid@icloud.com" url="https://github.com/humbledroid">humbledroid</vendor>
+    <description><![CDATA[This is a simple tool to store commands and use them up]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Kommander"
+                    anchor="right"
+                    factoryClass="com.humbledroid.kommander.KustomCommandsToolWindowFactory"/>
+
+    </extensions>
+</idea-plugin>
