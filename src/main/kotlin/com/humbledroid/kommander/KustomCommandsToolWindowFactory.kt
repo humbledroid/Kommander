@@ -10,7 +10,7 @@ class KustomCommandsToolWindowFactory : ToolWindowFactory {
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
         val panel = KustomCommandsPanel(project)
         val contentFactory = ContentFactory.getInstance()
-        val content = contentFactory.createContent(panel, "", false)
+        val content = contentFactory.createContent(panel, null, false)
         toolWindow.contentManager.addContent(content)
     }
 }
